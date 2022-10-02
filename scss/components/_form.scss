@@ -1,0 +1,21 @@
+.form-control {
+	border:none;
+	border-bottom: 1px solid #0154B8 !important;
+	border-radius: 0;
+	box-shadow: none !important;
+	padding-left: 0;
+	color: #0154B8 !important;
+	&::placeholder {
+		color: #0154B8;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder {
+	  color: #0154B8;
+	}
+	&::-ms-input-placeholder { 
+	  color: #0154B8;
+	}
+}
+.form-group {
+	margin-bottom: 20px;
+}

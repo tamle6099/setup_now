@@ -1,0 +1,130 @@
+.box-fee{
+  background: #FFFFFF;
+  box-shadow: 0 24px 83px rgba(0, 0, 0, 0.11), 0 7px 25px rgba(0, 0, 0, 0.06), 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 750px;
+  margin: 0 auto;
+  @include media-breakpoint-down(md){
+    padding: 0 15px 30px;
+    margin-top: 30px;
+  }
+  .box-fee-text{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md){
+      display: block;
+    }
+  }
+  .box-fee-price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #DDDDDD;
+    padding-right: 45px;
+    @include media-breakpoint-down(md){
+      border-right: none;
+      padding: 55px 0 20px;
+      border-bottom: 1px solid #DDDDDD;
+      margin-bottom: 20px;
+    }
+    img{
+      margin-bottom: 30px;
+      @include media-breakpoint-down(md){
+        position: absolute;
+        margin-top: -95px;
+      }
+    }
+  }
+  .box-fee-content{
+    padding-left: 50px;
+    @include media-breakpoint-down(md){
+      padding-left: 0;
+    }
+    ul{
+      text-align: left;
+      padding-left: 0;
+      list-style: none;
+      li{
+        margin-bottom: 14px;
+        &:before{
+          content: '';
+          width: 20px;
+          height: 14px;
+          background: url("../images/icon-check-black.svg") no-repeat;
+          display: inline-block;
+          margin-right: 10px;
+        }
+        span{
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.box-white-sm{
+  background: #FFFFFF;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.11), 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  .media{
+    align-items: center;
+    @include media-breakpoint-down(md){
+      font-size: 14px;
+    }
+  }
+  .media-left{
+    margin-right: 15px;
+  }
+}
+
+.image-textbox{
+  position: relative;
+  overflow: hidden;
+  height: calc(100% - 20px);
+  margin: 0 0 20px;
+  color: $color-white;
+  @include media-breakpoint-down(md){
+    min-height: 430px;
+    border-radius: 15px;
+  }
+  p{
+    color: $color-white;
+  }
+  .absolute-top{
+    position: absolute;
+    top: 32px;
+    left: 24px;
+  }
+  .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 40px 24px;
+    h3{
+      @include media-breakpoint-down(md){
+        font-size: 16px;
+      }
+    }
+  }
+  .img-absolute{
+    @include media-breakpoint-down(md){
+      height: 100%;
+    }
+    img{
+        @include media-breakpoint-down(md){
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+    }
+  }
+}

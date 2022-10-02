@@ -1,0 +1,35 @@
+.collapse-group {
+		padding: 15px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	background-color:white;
+	.collapse-title {
+		padding-right: 20px;
+	position: relative;
+	color: #0154B8;
+	font-size: 18px;
+	&[aria-expanded=false] {
+		font-weight: 400;
+	}
+	&[aria-expanded=true],&:hover {
+		font-weight: 500;
+	}
+	&::before {
+		content: url(../images/icon-collapse-plus.svg);
+		position: absolute;
+		top: calc(50% - 12px);
+		right: 0;
+		width: 24px;
+		height: 24px;
+	}
+	 @include media-breakpoint-down(md){
+	 	font-size: 14px;
+	 }
+}
+@include media-breakpoint-down(md){
+	 	padding: 10px 15px;
+	 	.collapse-content {
+	 		font-size: 14px;
+	 	}
+	 }
+}

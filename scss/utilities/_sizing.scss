@@ -1,0 +1,27 @@
+.min-width-200{
+  min-width: 200px !important;
+}
+.min-width-300{
+  min-width: 300px !important;
+}
+.max-width-720 {
+  max-width: 720px !important;
+}
+.width-65{
+  width: 65px !important;
+}
+.min-width-500{
+  min-width: 500px !important;
+}
+.h100{
+  height: 100% !important;
+}
+
+@include media-breakpoint-down(md){
+  .w-xs-100{
+    width: 100%;
+  }
+  .min-width-xs-auto{
+  min-width: auto !important;
+}
+}

@@ -1,0 +1,19 @@
+.title-decor {
+	padding-left: 22px;
+	font-size: 18px;
+	color: #636363;
+	font-weight: 400;
+	position: relative;
+	 @include media-breakpoint-down(md){
+	 		font-size: 14px;
+	 }
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 6px;
+		height: 100%;
+		background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+	}
+}

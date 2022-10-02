@@ -1,0 +1,40 @@
+.nav-tabs {
+    border: none;
+    .nav-link {
+        border: none !important;
+        color: #7fa1cb;
+        padding: 0 0 0 40px !important;
+        &:focus,
+        &:hover {
+            border: none;
+        }
+        @include media-breakpoint-down(md){
+            padding: 7px 0 !important;
+        }
+    }
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	position: relative;
+    background-color: transparent;
+    border: none !important;
+    font-weight: 500;
+    background-color: #EDFAFD;
+    span {
+        background: linear-gradient(215.9deg, #00c6ff 15.48%, #0072ff 110.47%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &::before {
+    	content: "";
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 2px;
+    	height: 100%;
+    	background: linear-gradient(215.9deg, #00C6FF 15.48%, #0072FF 110.47%);
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+}

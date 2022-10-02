@@ -1,0 +1,51 @@
+.table-general{
+  @include media-breakpoint-down(md){
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  thead{
+    th{
+      border-bottom-width: 1px;
+      padding: 16px 32px;
+      border-color: #DDDDDD;
+      @include media-breakpoint-down(md){
+        display: none;
+      }
+    }
+  }
+  tbody{
+    tr{
+      td{
+        padding: 19px 32px;
+        border-color: #DDDDDD;
+        @include media-breakpoint-down(md){
+          display: flex;
+          text-align: left !important;
+          font-size: 14px;
+          padding: 9px 16px;
+          background: #FBFBFB;
+          border: none;
+          border-right: 1px solid #DDDDDD;
+          border-left: 1px solid #DDDDDD;
+        }
+        +td{
+          &:before{
+            @include media-breakpoint-down(md){
+              content: attr(data-title);
+              font-weight: 500;
+              flex: 0 0 40%;
+            }
+          }
+        }
+        &:first-child{
+          @include media-breakpoint-down(md){
+            font-weight: 500;
+            background: $color-white;
+            border: 1px solid #DDDDDD;
+          }
+        }
+      }
+    }
+
+  }
+}

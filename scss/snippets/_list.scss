@@ -1,0 +1,25 @@
+.list-style-checked-black{
+  text-align: left;
+  padding-left: 0;
+  list-style: none;
+  li{
+    margin-bottom: 14px;
+    &:before{
+      content: '';
+      width: 20px;
+      height: 14px;
+      background: url("../images/icon-check-black.svg") no-repeat;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+.list-style-radius{
+  li{
+    @include media-breakpoint-down(md){
+      margin-bottom: 10px;
+    }
+  }
+
+}

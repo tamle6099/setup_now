@@ -1,0 +1,123 @@
+.sticker {
+	padding: 4px 8px;
+	font-size: 14px;
+	border-radius: 10px;
+	transition: 0.3s;
+	&-outline-blue {
+		border: 1px solid #5871B2;
+		color: #5871B2;
+		&:hover {
+			background-color: #5871B2;
+			color: #fff;
+		}
+	}
+}
+.promotion-box {
+	box-shadow: 0px 2px 8px rgba(91, 91, 91, 0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	.promotion-content {
+		padding: 15px;
+		h3 {
+			font-size: 18px;
+			@include media-breakpoint-down(md){
+				font-size: 16px;
+			}
+		}
+		@include media-breakpoint-down(md){
+			padding: 8px 0 0 0;
+		}
+	}
+	.promotion-img {
+		@include media-breakpoint-down(md){
+			border-radius: 10px;
+			overflow: hidden;
+		}
+	}
+	@include media-breakpoint-down(md){
+		box-shadow:none;
+		border-radius: 0;
+		border-bottom: 1px solid #F1F1F1;
+		margin-bottom: 12px;
+	}
+}
+.box-white {
+	text-align: center;
+	.number-step {
+		background-color: #fff;
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+	    width: 64px;
+	    height: 64px;
+	    border: 1px solid red;
+	    color: #0154B8;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    margin:0 auto;
+	    border:1px solid #DDDDDD;
+	    border-radius: 50%;
+	    font-weight: 500;
+	    font-size: 20px;
+	    &::before {
+	    	position: absolute;
+	    	left: 100%;
+	    	content: url(../images/arrow-step.png);
+		    @include media-breakpoint-down(md){
+		    	transform-origin: left;
+    			transform: translate(-32px,32px) rotate(90deg) ;
+		    }
+	    }
+	    @include media-breakpoint-down(md){
+	    	left: 15px;
+	    	transform: translateX(0);
+	    	top: 70px;
+	    }
+	}
+	.title-red {
+		color: #0154B8;
+		margin-bottom: 15px;
+		@include media-breakpoint-down(md){
+	    	text-align: left;
+	    	padding-left: 80px;
+	    }
+	}
+	ul, p {
+		text-align: left;
+		@include media-breakpoint-down(md){
+			padding-left: 80px;
+		}
+	}
+	img {
+		margin-bottom: 110px;
+		@include media-breakpoint-down(md){
+			margin-bottom: 20px;
+			padding-left: 80px;
+			display: block;
+		}
+	}
+}
+.how-to-setup-step .col-md-3 {
+	@include media-breakpoint-down(md){
+    	margin-bottom: 30px;
+    }
+}
+.how-to-setup-step .col-md-3:last-child {
+	.box-white .number-step {
+		&::before {
+			display: none;
+	    }
+	}
+}
+.card-title-2 {
+	border-bottom: 1px solid #DDD;
+	padding: 15px 30px;
+	font-size:20px;
+	color:#0154B8;
+	@include media-breakpoint-down(md){
+		font-size:16px;
+		padding: 12px 24px;
+    }
+}

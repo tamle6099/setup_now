@@ -1,0 +1,180 @@
+.btn{
+  outline: none !important;
+  box-shadow: none !important;
+}
+button{
+  border: none;
+  background: none;
+}
+.btn-outline-red{
+  position: relative;
+  background: $color-white;
+  background-clip: padding-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 17px 0;
+  font-size: $font-size;
+  @include media-breakpoint-down(md){
+    background: linear-gradient(225deg,#FF6A00 0%,#EE0979 100%);
+    padding: 12px 0;
+  }
+  span{
+    background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    @include media-breakpoint-down(md){
+      -webkit-text-fill-color: $color-white;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: -1px; bottom: -1px;
+    left: -1px; right: -1px;
+    background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+    @include media-breakpoint-down(md){
+      background: transparent;
+    }
+  }
+  &:hover{
+    background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+    span{
+      background: none;
+      -webkit-text-fill-color:$color-white;
+      color: $color-white;
+    }
+  }
+}
+.btn-outline-blue{
+  padding: 5px 10px;
+  position: relative;
+  background: $color-white;
+  background-clip: padding-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: $font-size;
+  &.text-12{
+    padding: 4px 6px;
+  }
+  span{
+    background: linear-gradient(215.9deg, #00C6FF 15.48%, #0072FF 110.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+  }
+  &::after {
+    position: absolute;
+    top: -1px; bottom: -1px;
+    left: -1px; right: -1px;
+    background: linear-gradient(215.9deg, #00C6FF 15.48%, #0072FF 110.47%);
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+  }
+  &:hover{
+    background: linear-gradient(215.9deg, #00C6FF 15.48%, #0072FF 110.47%);
+    span{
+      background: none;
+      -webkit-text-fill-color:$color-white;
+      color: $color-white;
+    }
+  }
+}
+
+.btn-image{
+  .hover{
+    display: none !important;
+  }
+  &[aria-expanded="true"]{
+    .hover{
+      display: block !important;
+      @include media-breakpoint-down(md){
+        display: none !important;
+      }
+    }
+    img:not(.hover){
+      display: none !important;
+    }
+  }
+}
+
+.btn-primary{
+  background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+  border-radius: 8px;
+  padding:12px 23px;
+  border:1px solid transparent;
+  font-size: 18px;
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  &:hover{
+    border: 1px solid #FF6A00;
+    background: transparent;
+    color: #FF6A00;
+  }
+}
+
+.btn-outline-grey{
+  color: #DDDDDD !important;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  padding: 12px 24px 15px;
+  &:hover{
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.link-danger{
+  background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid #EE0979;
+}
+.up-border-blue{
+  width: 47%;
+  padding: 15px 60px;
+  position: relative;
+  background: $color-white;
+  background-clip: padding-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: $font-size;
+  &.text-12{
+    padding: 4px 6px;
+  }
+  span{
+    background: linear-gradient(215.9deg, #00C6FF 15.48%, #0072FF 110.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+  }
+  P {
+    color: 
+    #818181;
+  }
+  &::after {
+    position: absolute;
+    top: -1px; bottom: -1px;
+    left: -1px; right: -1px;
+    background: linear-gradient(215.9deg, #00C6FF 15.48%, #0072FF 110.47%);
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+  }
+}
+.btn-next{
+  background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+  border-radius: 8px;
+  padding:12px 23px;
+  border:1px solid transparent;
+  font-size: 18px;
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

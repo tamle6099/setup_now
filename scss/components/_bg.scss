@@ -1,0 +1,39 @@
+.bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg-style-2 {
+    padding: 124px 0;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(160.41deg,#FF6A00 14.02%,#EE0979 144.58%);
+        @include media-breakpoint-down(md){
+            width: 100%;
+            height: 50%;
+        }
+    }
+    @include media-breakpoint-down(md){
+        padding: 0;   
+    }
+    .bg-style-2-img {
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:50%;
+        width:50%;
+        height: 100%;
+        @include media-breakpoint-down(md){
+            top:50%;
+            left:0%;
+            width:100%;
+            height: 50%;
+        }
+    }
+}

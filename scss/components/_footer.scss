@@ -1,0 +1,52 @@
+footer{
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
+}
+.footer {
+  &_app{
+    padding-top: 30px;
+    background: #454545;
+  }
+  &_oneIbc{
+    background: $primary-color-text;
+    padding:40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    @include media-breakpoint-down(md){
+      padding: 25px 0 30px;
+    }
+    a{
+      display: block;
+      color: $color-white;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+  }
+  &_right{
+    padding: 30px 0;
+    background: $primary-color-text;
+    text-align: center;
+    *{
+      color: #DDDDDD;
+      font-size: 14px;
+    }
+    &-text{
+      @include media-breakpoint-down(md){
+        color: $color-text-grey-dark !important;
+      }
+    }
+  }
+  &_border_right{
+    border-right: 1px solid #DDDDDD;
+    @include media-breakpoint-down(md){
+      border: none;
+    }
+  }
+}
+
+
+
+

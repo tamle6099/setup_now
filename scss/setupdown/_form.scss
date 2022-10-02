@@ -1,0 +1,37 @@
+
+.modal-dialog {
+    max-width: 615px !important;
+    .modal-content {
+        border: 1px solid #DDDDDD !important;
+        border-radius: 10px !important;
+        top: 175px;
+        left: 25px;
+    }
+}
+.check-btn {
+    width: 50%;
+    gap: 12px;
+    .cancel {
+        border-radius: 5px !important;
+        cursor: pointer;
+        width: 45%;
+        background: #FFFFFF;
+        border: 1px solid #9B9B9B !important;
+        border-radius: 8px;
+        color: #636363;
+        font-size: 18px;
+        padding: 12px;
+        margin-right: 15px;
+    }
+    .send {
+        cursor: pointer;
+        width: 45%;
+        background: linear-gradient(225deg, #FF6A00 0%, #EE0979 100%);
+         border-radius: 8px;
+        color: #ffffff;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 12px;
+    }
+
+}
